@@ -1,0 +1,72 @@
+/* styles/LoginPage.css */
+
+:root {
+  --bg: #1a1a1a;
+  --fg: #f2f2f2;
+  --input-bg: #2a2a2a;
+  --input-border: #444;
+  --button-bg: #4caf50;
+  --button-hover: #43a047;
+  --message-color: #f44336;
+}
+
+.task-form {
+  background-color: var(--bg);
+  color: var(--fg);
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.task-form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.task-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  color: var(--fg);
+  font-size: 1rem;
+}
+
+.task-form input::placeholder,
+.task-form textarea::placeholder {
+  color: #999;
+}
+
+.task-form button {
+  width: 100%;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.task-form button:hover {
+  background-color: var(--button-hover);
+}
+
+.task-form .message {
+  color: var(--message-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}

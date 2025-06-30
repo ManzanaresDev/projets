@@ -1,0 +1,50 @@
+.page-maintenance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 2rem 0rem 2rem;
+}
+.container-maintenance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.text-maintenance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 60rem;
+  color: white;
+  text-align: center;
+}
+
+.title-maintenance {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  max-width: 70%;
+}
+
+.p-maintenance {
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  max-width: 70%;
+}
+
+.img-maintenance {
+  width: 100%;
+  max-width: 39rem;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.button-maintenance {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

@@ -1,0 +1,75 @@
+.formaProfil-container {
+  width: 90%;
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--titlebackground);
+  border-radius: 1rem;
+}
+.left-formaProfil {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-formaProfil {
+  width: 80%;
+}
+.mid-formaProfil {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.title-formaProfil {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.progress-formaProfil {
+  width: 100%;
+  height: 40%;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+.right-formaProfil {
+  width: 30%;
+  height: 100%;
+}
+.booleen-formaProfil {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 1rem;
+}
+.button-formaProfil {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 1rem;
+}
+.button-enCours {
+  background-color: var(--background2);
+  border: none;
+  color: var(--background1);
+  width: 80%;
+}
+
+.button-termine {
+  background-color: var(--background1);
+  border: none;
+  color: var(--background4);
+  width: 80%;
+}
+.button-nonCommencé {
+  display: none;
+}

@@ -1,0 +1,32 @@
+Mardi 22/04
+
+Création des composants Navbar / Navlink / List 
+
+Navbar = Nous avons créer le composant Navbar avec un div logo qui prend une balise img,
+         une div navbar_links qui prend en paramètre le composant Navlinks 
+         ensuite deux balises href pour le login et register
+
+Navlink = Composant qui va permettre de rentrer une value et un etat 
+          Value = (attribut de la navbar)
+          Etat =  hasDropdown qui sert pour définir si on ouvre ou l'on ferme le menu déroulant grâce à un boolean de base set sur false
+                  Création d'une fonction toggleOpen qui utilise le useState pour un code plus propre que l'on appelle avec un onClick 
+              On définit avec le hasDropdown si la balise de l'attribut devient un href ou non 
+
+
+List = Composant qui va venir créer grâce à un tableau une list des attributs dans le menu déroulant avec la fonction map, cette list on l'appelle ensuite dans notre composant Navlink
+
+App.jsx = On créer une list links qui va utiliser les paramètres des composants pour l'afficher sur la page et dans le html
+
+Mercredi 23/04
+
+Création des composants PostIt / Article / Text / title 
+
+PostIt = Pour le composant PostIt on à définit une image en background avec un import depuis le dossier assets ensuite on a juste rajouter un attribut content dans une div qui nous permet d'écrire le contenu de notre choix
+         Css = on définit un css de base pour que le texte ne déborde pas du PostIt
+
+Article = Le composant prend en compte le titre et les deux contenus, et des attributs de classe ont été ajoutés pour permettre l'ajout d'une classe dans l'app.js.
+            Ces classes permettent de changer le CSS du composant car certains sont vertical et d'autres horizontaux, le background change lui aussi et peut être bleu foncé ou clair, pour les titres certains sont jaunes et d'autres noirs
+
+Text = Un composant pour ecrire du text, en parametre le texte, le titre et un boolean "vertical" pour savoir si la ligne a coté du texte sera horizontal et donc en dessous ou vertical et donc sur le coté, si le titre est vide alors la div n'est pas affiché
+
+Title = Le composant sert a ecrire les titre de certaines pages avec une font spéciale, en parametre le titre, backgroundColor et color, ces deux changeant soit la couleur du fond soit la couleur du texte

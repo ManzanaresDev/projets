@@ -1,0 +1,56 @@
+.container-button404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+  width: 23%;
+  background-color: var(--background3);
+  border-radius: 1rem;
+}
+
+.text1-button404 {
+  height: 30%;
+  width: 98%;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--textcolor1);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text2-button404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33%;
+  width: 90%;
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  color: var(--textcolor2);
+  text-align: center;
+}
+.path-button404 {
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.button404-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
+  background-color: var(--titlebackground);
+  color: var(--textcolor);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.button404-link:hover {
+  background-color: var(--background2);
+}
