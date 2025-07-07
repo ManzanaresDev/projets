@@ -1,0 +1,2 @@
+Build command: ./$ pnp install --frozen-lockfile; pnpm run build
+Start Command: ./$ npm run start
