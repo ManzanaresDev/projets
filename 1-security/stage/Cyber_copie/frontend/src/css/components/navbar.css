@@ -1,0 +1,143 @@
+@import url("../../style.css");
+
+.navbar {
+  display: none;
+  justify-content: center;
+  height: 7rem;
+  background-color: var(--navbarbackground);
+  padding: 0 1rem 0 1rem;
+}
+
+.navbar_logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+.navbar_logo img {
+  height: 10rem;
+}
+.navbar_links {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  height: 100%;
+  width: 60%;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.underline {
+  cursor: pointer;
+  text-decoration: underline 1px;
+  text-underline-offset: 7px;
+}
+.navbar_links span {
+  cursor: pointer;
+  color: var(--textcolor);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.navbar a {
+  color: var(--textcolor);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.navbar_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  height: 100%;
+  width: 20%;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+  color: var(--textcolor);
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: 2rem;
+}
+
+.avatar-image {
+  width: 20%;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* ...existing code... */
+
+.Navlink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 2.5rem; /* Ajuste selon la hauteur de ta navbar */
+  left: 0;
+  min-width: 180px;
+  background: #181b2c;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 0.5rem 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  animation: dropdownFadeIn 0.2s;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-list li {
+  list-style: none;
+  padding: 0.5rem 1.2rem;
+  color: var(--textcolor, #fff);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.dropdown-list li:hover,
+.dropdown-list a:hover {
+  background: var(--footerbackground, #2d323b);
+  color: var(--accentcolor, #00bcd4);
+  text-decoration: none;
+}
+
+.dropdown-list a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Optionnel : pour la flèche */
+.dropdown-icon {
+  margin-left: 0.2em;
+  transition: transform 0.2s;
+}
+.Navlink[aria-expanded="true"] .dropdown-icon {
+  transform: rotate(180deg);
+}

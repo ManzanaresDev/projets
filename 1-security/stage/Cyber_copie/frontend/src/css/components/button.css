@@ -1,0 +1,18 @@
+.custom-button {
+  padding: 0.8rem 2rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: var(--titlebackground);
+  background-color: transparent;
+  border: 0.1rem solid var(--titlebackground);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.button-guide:hover {
+  background-color: var(--titlebackground);
+  color: var(--textcolor);
+}

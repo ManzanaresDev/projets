@@ -1,0 +1,61 @@
+.page5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--background1);
+  gap: 4rem;
+}
+.page5-header {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+.second-para-page5 {
+  color: var(--background4);
+  width: 49%;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+.page5-section2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 10rem 0 10rem;
+  gap: 10rem;
+}
+
+.page5-section3 {
+  padding: 0 10rem 0 10rem;
+  text-align: center;
+}
+.footer-page5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page5-blanche {
+  width: 100%;
+  background-color: var(--background4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0rem 4rem 0rem;
+  gap: 4rem;
+}
+.page5-titre {
+  display: flex;
+  width: 90%;
+  justify-content: left;
+}
+.page5-blanche-text {
+  width: 70%;
+  font-size: clamp(0.8rem, 1.2vw, 2rem);
+  line-height: 4rem;
+}

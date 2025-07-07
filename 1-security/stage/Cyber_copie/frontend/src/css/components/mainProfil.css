@@ -1,0 +1,90 @@
+.profil-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.main-profil {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background3);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 34%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  background-color: var(--titlebackground);
+}
+.profil-picture {
+  width: 18%;
+}
+.profil-picture img {
+  width: 100%;
+}
+.profil-info {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 62%;
+  padding-left: 2rem;
+}
+.profil-pseudo {
+  color: var(--textcolor);
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+}
+.profil-email {
+  color: var(--textcolor);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+.profil-badge {
+  width: 20%;
+}
+.profil-button {
+  background-color: var(--background2);
+  color: var(--textcolor1);
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.5rem, 1.7rem, 1rem);
+  width: 45%;
+}
+.sec-profil {
+  width: 34%;
+  height: 85%;
+  background-color: var(--footerbackground);
+  border-radius: 0% 0% 5% 5%;
+}
+.text-profil {
+  color: var(--textcolor);
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.formation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  height: 80%;
+}
+.footer-profil {
+  display: flex;
+  justify-content: right;
+  padding-right: 2rem;
+}
+.footer-profil a {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: var(--textcolor3);
+  margin-right: 2rem;
+  font-size: clamp(1rem, 1vw, 2rem);
+  gap: 0.5rem;
+}

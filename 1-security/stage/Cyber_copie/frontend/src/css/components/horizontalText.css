@@ -1,0 +1,21 @@
+.horizontalLine {
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: var(--background4);
+}
+
+.horizontalText-container {
+  min-width: auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.horizontalText-title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

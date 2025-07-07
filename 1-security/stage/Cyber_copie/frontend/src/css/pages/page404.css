@@ -1,0 +1,40 @@
+.container-page404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.text-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 40%;
+  height: 25%;
+
+  color: white;
+  text-align: center;
+}
+.title-404 {
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+.p-404 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.img-404 {
+  width: 50%;
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.button-404 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 34%;
+  height: 25%;
+}

@@ -1,0 +1,15 @@
+.page3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: var(--background3);
+  padding-top: 5rem;
+  gap: 5rem;
+}
+.page3-title {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
