@@ -1,0 +1,60 @@
+.landing_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical */
+  align-items: center; /* horizontal */
+  min-height: calc(100vh - 6rem); /* si le navbar fait ~6rem */
+  padding: 2rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.landing_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1.5rem;
+}
+
+.landing_text h1 {
+  font-size: 2.2rem;
+}
+
+.landing_text span {
+  color: var(--primary);
+}
+
+.landing_img {
+  width: 80%;
+}
+
+.landing_img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .landing_wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 4rem;
+  }
+
+  .landing_text {
+    align-items: flex-start;
+    font-size: 2rem;
+  }
+
+  .landing_text h1 {
+    font-size: 3.5rem;
+  }
+
+  .landing_img {
+    width: 50%;
+    margin-left: 2rem;
+  }
+}
