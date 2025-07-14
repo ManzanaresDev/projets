@@ -1,0 +1,130 @@
+.toDo_wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem 4rem;
+  background-color: #f5f7fa;
+  box-sizing: border-box;
+}
+
+.toDo_header {
+  margin-top: 15vh;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 90%;
+  border-radius: 3px;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.logo_section,
+.title_section,
+.input_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.input_wrapper input {
+  min-width: 100px;
+  flex-grow: 1;
+}
+
+.image {
+  max-width: 50px;
+  margin-right: 1rem;
+}
+
+.toDo_card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  max-width: fit-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.toDo_card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.toDo_cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.toDo_cardTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.toDo_cardTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.toDo_cardDescription {
+  margin-top: 0.5rem;
+}
+
+.toDo_cardCompletion {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.toDo_cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.toDo_cardActions {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  color: #595959;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.toDo_cardAction {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  color: #595959;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.toDo_cardAction:hover {
+  color: #1677ff;
+}
