@@ -1,0 +1,267 @@
+:root {
+  --primary: rgb(0, 132, 255);
+  --darkPrimary: rgb(4, 110, 200);
+  --secondary: rgb(211, 233, 253);
+  --darkSecondary: rgb(185, 214, 241);
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.primaryBtn {
+  padding: 0.6em 1.2em;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: var(--darkPrimary);
+  color: white;
+}
+
+.secondaryBtn {
+  padding: 0.6em 1.2em;
+  font-size: 1.5rem;
+  background-color: var(--secondary);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background-color: var(--darkSecondary);
+  color: black;
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 6rem;
+  box-shadow: 0 0.233px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+
+.logo_wrapper img {
+  height: 60px;
+}
+
+/* menu */
+
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.navigation-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-menu a {
+  display: block;
+  padding: 1.8rem 1.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navigation-menu a:hover {
+  background-color: var(--secondary);
+  color: #000;
+}
+
+.activeNAV {
+  background-color: white;
+  background-color: var(--secondary);
+  color: #000;
+  font-weight: 600;
+}
+
+/* responsive */
+
+/* Menu normal */
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Bouton hamburger caché par défaut */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
+}
+
+/* Overlay sombre */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .navigation-menu {
+    padding: 6rem 1rem 2rem 1rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: max-content;
+    max-width: 80vw;
+    height: 100vh;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navigation-menu.open {
+    right: 0;
+  }
+
+  .navigation-menu li {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .navigation-menu a {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
