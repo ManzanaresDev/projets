@@ -68,7 +68,7 @@ function Register() {
       <div className={styles.login_wrapper}>
         <div className={styles.login_card}>
           <img src={login} alt="register" className={styles.image} />
-          <Title level={1}>Register</Title>
+          <Title level={1}>Inscription</Title>
 
           <div className={styles.input_wrapper}>
             <Input

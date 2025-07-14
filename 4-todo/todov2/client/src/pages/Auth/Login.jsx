@@ -48,7 +48,7 @@ function Login() {
       <div className={styles.login_wrapper}>
         <div className={styles.login_card}>
           <img src={login} alt="login" className={styles.image} />
-          <Title level={1}>Login</Title>
+          <Title level={1}>Authentification</Title>
 
           <div className={styles.input_wrapper}>
             <Input

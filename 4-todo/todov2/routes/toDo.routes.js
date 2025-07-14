@@ -8,6 +8,6 @@ const toDoRouter = express.Router();
 toDoRouter.post("/create", authenticateToken, toDoController.createTask);
 toDoRouter.delete("/delete/:id", authenticateToken, toDoController.deleteTask);
 toDoRouter.get("/getAll", authenticateToken, toDoController.getAllTasks);
-toDoRouter.patch("/update/:id", authenticateToken, toDoController.updateTask);
+toDoRouter.post("/update/:id", authenticateToken, toDoController.updateTask);
 
 export default toDoRouter;
