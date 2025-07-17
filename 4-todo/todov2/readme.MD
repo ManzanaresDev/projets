@@ -1,4 +1,4 @@
-# TaskManager
+# ![Logo](./images/capture1.png)TaskManager
 
 **TaskManager** est une application web de gestion de tâches permettant aux utilisateurs de créer, modifier, suivre et organiser leurs tâches quotidiennes. Le projet repose sur la stack MERN (MongoDB, Express, React, Node.js).
 
@@ -23,4 +23,4 @@
 - **Autres** : Tailwind CSS, dotenv, axios
 
 ## 📁 Structure du projet
-![Aperçu de l'application](./images/capture1.png)
+![Aperçu de l'application](./images/capture2.png)
