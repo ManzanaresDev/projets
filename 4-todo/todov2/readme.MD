@@ -21,3 +21,6 @@
 - **Base de données** : MongoDB + Mongoose
 - **Authentification** : JWT + cookies sécurisés
 - **Autres** : Tailwind CSS, dotenv, axios
+
+## 📁 Structure du projet
+![Aperçu de l'application](./images/capture1.png)
