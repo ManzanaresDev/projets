@@ -24,3 +24,17 @@
 
 ## 📁 Structure du projet
 ![Aperçu de l'application](./images/capture2.png)
+
+## 🔐 Authentification
+L'application utilise un système de double token :
+- **AccessToken** (durée courte, stocké côté client)
+- **RefreshToken** (httpOnly, stocké en cookie, permet de renouveler l'accessToken)
+
+### Clonage du projet
+
+git clone https://github.com/votre-nom/taskmanager.git
+cd taskmanager
+
+##Lancemenet du projet
+npm run start
+
