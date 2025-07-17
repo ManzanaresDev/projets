@@ -63,7 +63,7 @@ function Navbar() {
         )}
 
         <ul className={`navigation-menu ${menuOpen ? "open" : ""}`}>
-          <li style={{ paddingRight: "20px", paddingLeft: "100px" }}>
+          <li style={{ paddingRight: "20px"}}>
             <Link to="/" className={isActive("/") ? "activeNAV" : undefined}>
               Accueil
             </Link>
