@@ -29,12 +29,13 @@
 ## Authentification
 
 L'application utilise un système de token stocké dans un cookie :
+
 - **AccessToken** (durée courte, stocké côté client)
 
 ## Clonage du projet
 
-**git clone https://github.com/votre-nom/taskmanager.git**
-**cd taskmanager**
+** git clone https://github.com/votre-nom/taskmanager.git**
+** cd taskmanager**
 
 ##Lancemenet du projet
 npm run start (lancement en parallèle frontend / backend)
@@ -44,17 +45,30 @@ npm run start (lancement en parallèle frontend / backend)
 ### User routes
 
 #### Routes d'authentification
+
 - post: "/auth/register"
 - post: "/auth/login"
 - post: "/auth/logout"
 
 #### Routes publics
+
 - get: "/me"
 
 ### Tâche routes
 
 #### Routes privées
+
 - post: "/create"
 - delete: "/delete/:id"
 - get: "/getAll"
-- post("/update/:id"
+- post: "/update/:id"
+
+## Améliorations futures
+
+- Attribution de tâches à plusieurs utilisateurs
+- Système de tags et de filtres avancés
+
+## Auteur
+
+Projet réalisé par MANZANARES MARCOS
+Dans le cadre de la formation Développeur Web et Web Mobile (DWWM) Dunkerque 2025
