@@ -7,7 +7,7 @@ import "../../index.css";
 
 function Landing() {
   return (
-    <div>
+<div className={styles.page}>
       <Navbar />
       <div className={styles.landing_wrapper}>
         <div className={styles.landing_text}>

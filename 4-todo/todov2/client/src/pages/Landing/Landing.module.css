@@ -59,3 +59,7 @@
     margin-left: 2rem;
   }
 }
+
+.page {
+  padding-top: 6rem; /* hauteur de la navbar */
+}
