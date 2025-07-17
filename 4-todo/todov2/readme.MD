@@ -33,8 +33,8 @@ L'application utilise un système de token stocké dans un cookie :
 
 ## Clonage du projet
 
-###git clone https://github.com/votre-nom/taskmanager.git
-###cd taskmanager
+**git clone https://github.com/votre-nom/taskmanager.git**
+**cd taskmanager**
 
 ##Lancemenet du projet
 npm run start (lancement en parallèle frontend / backend)
