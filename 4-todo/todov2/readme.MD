@@ -5,11 +5,14 @@
 ## 🧩 Fonctionnalités
 
 - Authentification sécurisée (inscription, connexion, déconnexion)
-- Création, édition et suppression de tâches
-- Gestion de l’état d’une tâche (à faire, en cours, terminée)
+- Création, edition et suppression de tâches (et bientôt filtrage des tâches)
+- Gestion de l’état d’une tâche (à faire ou terminée)
+- API REST sécurisée avec cookies
+
+## Travail à venir:
+
+- Filtrage de tâches par titre
 - Classement des tâches par priorité ou date
-- Interface utilisateur réactive et intuitive
-- API RESTful sécurisée avec JWT
 
 ## 🛠️ Stack technique
 
