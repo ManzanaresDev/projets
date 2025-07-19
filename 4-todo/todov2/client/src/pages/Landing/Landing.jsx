@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
 import landing from "../../assets/landing.png"; // PAS d'accolades ici
-import styles from "./landing.module.css"; // Si tu utilises CSS module
+import styles from "./Landing.module.css"; // Si tu utilises CSS module
 import "../../index.css";
 
 function Landing() {
