@@ -7,7 +7,7 @@ import {
   ExclamationCircleOutlined,
 } from "@ant-design/icons";
 
-import styles from "./ToDo.module.css";
+import styles from "./Todo.module.css";
 import "../../index.css";
 
 import toDoLogo from "../../assets/toDoLogo.png";
