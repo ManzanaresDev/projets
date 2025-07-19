@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000;
 // middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173", // <-- ton frontend
+    origin: "https://todov2-frontend.onrender.com", // <-- ton frontend
     credentials: true, // <-- autorise les cookies / headers d'auth
   })
 );
@@ -30,6 +30,6 @@ app.use("/api/todo", toDoRoutes);
 
 connectDB();
 
-app.listen(PORT, () => {
-  console.log(`Server ready on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running`);
 });
