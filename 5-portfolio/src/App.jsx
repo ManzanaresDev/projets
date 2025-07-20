@@ -28,7 +28,7 @@ export default function App() {
         <ProjectCard
           title="Todo List App version 1"
           description="MVP de gestion de tâches avec React et backend Node.js utilisant localStorage pour le stockage de données"
-          url="https://todolist-z0fo.onrender.com"
+          url="https://todov1-3ybd.onrender.com"
           image={taskimage}
         />
 
