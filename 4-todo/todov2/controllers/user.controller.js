@@ -44,7 +44,7 @@ async function logout(req, res) {
   res.clearCookie("tokenAccess", {
     httpOnly: true, // accessible via JS
     secure: process.env.NODE_ENV === "production",
-    sameSite: "Strict",
+    sameSite: "None",
     path: "/",
   });
   res.status(200).json({ message: "user logout successfully" });
