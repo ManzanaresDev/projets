@@ -13,11 +13,12 @@ dotenv.config();
 const app = express();
 
 const PORT = process.env.PORT || 5000;
+const FRONTEND_URL = "https://todov2-frontend.onrender.com";
 
 // middlewares
 app.use(
   cors({
-    origin: "https://todov2-frontend.onrender.com",
+    origin: FRONTEND_URL,
     credentials: true,
   })
 );
