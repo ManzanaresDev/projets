@@ -35,7 +35,7 @@ export default function App() {
         <ProjectCard
           title="Todo List App version 2"
           description="MVP de gestion de tâches avec React et backend Node.js utilisant MongoDB pour le stockage de données"
-          url="https://todov2-frontend.onrender.como"
+          url="https://todov2-frontend.onrender.com"
           image={taskimage}
         />
 
