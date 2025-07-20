@@ -125,7 +125,7 @@ function App() {
               type="text"
               value={newTitle}
               onChange={(e) => setNewTitle(e.target.value)}
-              placeholder="What's the task title ?"
+              placeholder="What's the task title?"
             />
           </div>
 
