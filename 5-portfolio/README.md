@@ -1,38 +1,4 @@
-Parfait, j’ai bien reçu l’image du portfolio. C’est un design avec une navigation latérale gauche fixe, une section de profil avec une photo, un nom, une fonction, des liens sociaux et des boutons "Download CV" et "Contact Me". À droite, les sections changent dynamiquement (ici, on voit les services proposés).
-
-Tu m’avais demandé un portfolio similaire avec un style sombre et utilisant Bootstrap via CDN, pas Tailwind.
-
-Souhaites-tu que je te génère :
-
-Un projet React complet avec cette structure ?
-
-Ou uniquement la structure HTML/CSS de base en Bootstrap sombre à intégrer ensuite dans React ?
-
-Ou encore une maquette en React fonctionnelle avec navigation et contenu dynamique (par exemple avec React Router ou useState) ?
-
-Dis-moi ce que tu préfères, et si tu veux y inclure :
-
-une photo personnelle ou avatar générique,
-
-des données fictives ou les tiennes,
-
-des sections spécifiques (par exemple "Projets", "Services", "Contact", "Blog", etc.).
-
-
-
-
-
-
-
-
-Vous avez dit :
-Un projet React complet avec cette structure ?
-
-
-ChatGPT a dit :
-Éléments mémorisés mis à jour
-Parfait. Voici ce que je vais te générer :
-
+# portfolio projet
 ⚙️ Stack
 React (Vite) pour rapidité et simplicité
 
