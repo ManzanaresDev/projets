@@ -25,7 +25,8 @@ async function login(req, res) {
     res.cookie("tokenAccess", tokenAccess, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
-      sameSite: "Strict",
+      // sameSite: "Strict",
+      sameSite: "None",
       maxAge: 15 * 60 * 1000, // 15 mins
       path: "/",
     });

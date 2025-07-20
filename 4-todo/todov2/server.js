@@ -17,8 +17,8 @@ const PORT = process.env.PORT || 5000;
 // middlewares
 app.use(
   cors({
-    origin: "https://todov2-frontend.onrender.com", // <-- ton frontend
-    credentials: true, // <-- autorise les cookies / headers d'auth
+    origin: "https://todov2-frontend.onrender.com",
+    credentials: true,
   })
 );
 app.use(express.json());
