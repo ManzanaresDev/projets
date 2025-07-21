@@ -51,7 +51,7 @@ export default function App() {
           title="Digit"
           description="Jeu de stratégie digit"
           url="https://digit-6br4.onrender.com"
-          image={digito}
+          image={digit}
         />
       </main>
 
