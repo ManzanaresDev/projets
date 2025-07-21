@@ -1,0 +1,294 @@
+:root {
+  --caseHeight: 100;
+  --caseWidth: 100;
+  --segmentWidth: 20;
+  --segmentSeparation: 10;
+  --segmentColor: "white";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #393d42;
+
+  min-height: 100vh;
+}
+
+.mainContainer {
+  height: 890px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.divShow {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  height: 600px;
+}
+
+
+.canvas {
+  background-color: transparent;
+}
+
+.structureCarte {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  
+  background-image: url("../assets/fond2.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(6, 100px);
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+  width: fit-content;
+  height: fit-content;
+  
+  border-radius: 20px;
+}
+
+.imageCarte {
+  /* version mobile */
+  /* position: relative;
+  top: -400px;
+  left: 20px;
+  z-index: 3;  
+  width: 200px; */
+
+  /* version laptop + tablette */
+  position: relative;
+  top: -680px;
+  left: 570px;
+  z-index: 3;  
+  width: 265px;
+  height: fit-content;
+}
+
+
+.points{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+
+  /* version mobile */
+  /* position: relative;
+  top: -700px;
+  left: 8px;
+  z-index: 3;
+  width: fit-content;
+  height: fit-content; */
+
+  /* version laptop + tablette */
+  position: relative;
+  top: -780px;
+  left: 40px;
+  z-index: 3;
+  width: fit-content;
+  height: fit-content;  
+}
+
+.cardContainer {
+  display: flex;
+  /* column-gap: 30px; */
+}
+
+
+.mainCard {
+  height: 200px;
+  margin: 0 20px;
+
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.mainCard:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.pioche {
+
+  /* valeurs version mobile */
+  /* position: relative;
+  width: 150px;
+  top: -110px;
+  left: 350px;
+  z-index: 3; */
+
+  /*valeurs version laptop + tablette  */
+  position: relative;
+  width: 300px;
+  top: -600px;
+  left: 530px;
+  z-index: 3;
+}
+
+#pioche
+{
+  /* version laptop + tablette */
+  width: 90%;
+
+  border-radius: 20px;
+  
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+#pioche:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hidden{
+  display: none;
+}
+
+.timerContainer{
+  /* versionFti mobile */
+  /* position: relative;
+  top: -980px;
+  left: 330px;
+  z-index: 2; */
+
+  /* version laptop + tablette */
+  position: relative;
+  top: -1210px;
+  left: 330px;
+  z-index: 2;
+  
+  width: 150px;
+  height: 100px;
+  padding-left: 40px;
+  padding-top: 20px;
+  
+  background-image: url("../assets/time.png");
+  background-position: center left ;
+  background-size: 45%;
+  background-repeat: no-repeat;
+}
+
+.timer{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.screen{
+  display: flex;
+  flex-direction: column;
+}
+
+.box{
+  background-color: white;
+  width: 100%;
+  height: 100px;
+}
+
+.logoWin{
+  
+  width: 400px;
+
+  display: none;
+}
+
+.logoLoose{
+  
+  width: 400px;
+
+  display: none;
+}
+
+.dark{
+  opacity:0.1;
+}
+
+.show{
+  display: block;
+}
+
+.tryAgain{
+  position:relative;
+  left: 0;
+  top:-330px;
+  
+  width: 200px;
+
+  display: none;
+}
+
+.leaderCard{
+  /* version mobile */
+  /* width: 100%; */
+
+  /* version laptop + tablette */
+  height:300px;
+}
+
+
+
+@media only screen and (max-width : 768px) {
+  /* CSS pour les smartphones et tablettes ici */
+
+  .imageCarte {
+    /*version mobile + tablette */
+    position: relative;
+    top: -450px;
+    left: 15px;
+    z-index: 3;  
+    height: fit-content;
+  }
+
+  .leaderCard{
+    /* version mobile */
+    height: 200px;
+  }
+
+  .points{  
+    /* version mobile */
+    position: relative;
+    top: -700px;
+    left: 8px;
+    z-index: 3;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .pioche {
+    /* valeurs version mobile */
+    position: relative;
+    width: 150px;
+    top: -110px;
+    left: 350px;
+    z-index: 3;
+  }
+
+  .timerContainer{
+    /* version pour mobile + tablette */
+    position: relative;
+    top: -1020px;
+    left: 330px;
+    z-index: 2;
+  }
+
+}
