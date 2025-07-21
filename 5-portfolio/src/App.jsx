@@ -51,7 +51,7 @@ export default function App() {
           title="Digit"
           description="Jeu de stratégie digit"
           url="#"
-          image={digit}
+          image={digito}
         />
       </main>
 
