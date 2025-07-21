@@ -5,7 +5,6 @@ import User from "../models/user.model.js";
 import { userExists } from "../outils/user.outils.js";
 
 export const verifyAuthentification = async (req, res, next) => {
-  console.log("🧪 req.cookies :", req.cookies); // Ajout ici
   try {
     // 1. Récupérer le token depuis le cookie
     const accessToken = req.cookies?.accessToken;

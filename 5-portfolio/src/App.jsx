@@ -3,6 +3,7 @@ import ProjectCard from "./components/ProjectCard.jsx";
 import Footer from "./components/Footer.jsx";
 import taskimage from "./assets/task.png";
 import veilinkimage from "./assets/veilink.png";
+import digit from "./assets/digit.png";
 // si App.jsx est dans src/
 
 export default function App() {
@@ -44,6 +45,13 @@ export default function App() {
           description="Projet Veilink - Plateforme e-learning sécurisée"
           url="https://cyber-g39b.onrender.com"
           image={veilinkimage}
+        />
+
+        <ProjectCard
+          title="Digit"
+          description="Jeu de stratégie digit"
+          url="#"
+          image={digit}
         />
       </main>
 
