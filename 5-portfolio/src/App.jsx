@@ -50,7 +50,7 @@ export default function App() {
         <ProjectCard
           title="Digit"
           description="Jeu de stratégie digit"
-          url="#"
+          url="https://digit-6br4.onrender.com"
           image={digito}
         />
       </main>
