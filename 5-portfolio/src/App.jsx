@@ -43,7 +43,7 @@ export default function App() {
         <ProjectCard
           title="Veilink"
           description="Projet Veilink - Plateforme e-learning sécurisée"
-          url="https://cyber-adk2.onrender.com"
+          url="https://cyber-adk2.onrender.com/"
           image={veilinkimage}
         />
 
