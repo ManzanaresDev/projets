@@ -44,6 +44,9 @@ importers:
       path:
         specifier: ^0.12.7
         version: 0.12.7
+      pnpm:
+        specifier: ^10.13.1
+        version: 10.13.1
       react-cookie:
         specifier: ^8.0.1
         version: 8.0.1(react@19.1.0)
@@ -533,6 +536,11 @@ packages:
 
   path@0.12.7:
     resolution: {integrity: sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==}
+
+  pnpm@10.13.1:
+    resolution: {integrity: sha512-N+vxpcejDV+r4MXfRO6NpMllygxa89urKMOhaBtwolYhjQXIHJwNz3Z+9rhVHrW5YAQrntQwDFkkIzY3fgHPrQ==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   portfinder@1.0.37:
     resolution: {integrity: sha512-yuGIEjDAYnnOex9ddMnKZEMFE0CcGo6zbfzDklkmT1m5z734ss6JMzN9rNB3+RR7iS+F10D4/BVIaXOyh8PQKw==}
@@ -1234,6 +1242,8 @@ snapshots:
     dependencies:
       process: 0.11.10
       util: 0.10.4
+
+  pnpm@10.13.1: {}
 
   portfinder@1.0.37:
     dependencies:
