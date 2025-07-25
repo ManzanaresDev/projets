@@ -4,8 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "start": "concurrently \"npm run preview --prefix frontend\" \"node backend/server.js\""
+  "build": "cd frontend && npm install && npm run build",
+  "start": "cd backend && npm install && node server.js"
   },
   "keywords": [],
   "author": "",
