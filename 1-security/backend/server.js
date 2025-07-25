@@ -44,6 +44,7 @@ const allowedOrigins = [
 //     credentials: true,
 //   })
 // );
+  console.log("CORS Origin reçu:", origin); // ← très important
 app.use(
   cors({
     origin: true, // ou "*" si tu enlèves credentials: true
