@@ -46,14 +46,7 @@ const allowedOrigins = [
 // );
 app.use(
   cors({
-    origin: function (origin, callback) {
-      console.log("CORS Origin:", origin); // à garder temporairement
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS: " + origin));
-      }
-    },
+    origin: true, // ou "*" si tu enlèves credentials: true
     credentials: true,
   })
 );
