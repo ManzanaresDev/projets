@@ -119,7 +119,7 @@ const __dirname = path.dirname(__filename);
 // Middleware cookies
 app.use(cookieParser());
 
-// 🔐 CORS config
+// 🔐 CORS config modifié
 const allowedOrigins = [
   "http://veilink.tech",
   "https://veilink.tech",
