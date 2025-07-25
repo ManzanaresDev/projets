@@ -66,17 +66,19 @@ console.log("📁 Frontend path:", frontendPath);
 app.use(express.static(frontendPath));
 
 // 🔁 Rediriger toutes les routes non API vers index.html
-app.get("*", (req, res) => {
+app.use((req, res, next) => {
   if (
     req.method === "GET" &&
+    !req.path.startsWith("/api") &&
     !req.path.startsWith("/uploads") &&
-    !req.path.includes(".") // Ne pas intercepter les fichiers .js, .css, etc.
+    !req.path.includes(".") // évite d'intercepter les fichiers statiques
   ) {
     res.sendFile(path.join(frontendPath, "index.html"));
   } else {
-    res.status(404).send("Not found");
+    next(); // Laisse les erreurs 404 être gérées par Express
   }
 });
+
 
 // 🚀 Lancer le serveur
 const port = process.env.BACKEND_PORT || 5000;
