@@ -28,7 +28,7 @@ const allowedOrigins = [
   "https://www.veilink.tech",
   "http://localhost:5173",
   "http://127.0.0.1:5173",
-  "https://cyber-g39b.onrender.com"
+  "https://cyber-g39b.onrender.com/"
 ];
 
 // Middleware CORS global
