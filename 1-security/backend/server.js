@@ -51,9 +51,6 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// 📁 Fichiers uploadés
-app.use("/uploads", express.static(path.join(__dirname, "..", "uploads")));
-
 // 📦 Connexion BDD + création admin
 await connectDB();
 await createAdminUser();
