@@ -28,23 +28,25 @@ const allowedOrigins = [
   "https://veilink.tech",
   "http://www.veilink.tech",
   "https://www.veilink.tech",
-  "http://localhost:5173",
-  "http://127.0.0.1:5173",
+  "http://localhost:5174",
+  "http://localhost:5000",
+  "http://127.0.0.1:5174",
   "https://cyber-g39b.onrender.com",
-  "https://cyber-adk2.onrender.com"
+  "https://cyber-adk2.onrender.com",
 ];
 
-app.use(cors({
-  origin: function (origin, callback) {
-    console.log("CORS Origin reçu:", origin);
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS: " + origin));
-    }
-  },
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS: " + origin));
+      }
+    },
+    credentials: true,
+  })
+);
 
 // 🍪 Cookies & Body Parsing
 app.use(cookieParser());
@@ -80,9 +82,11 @@ app.use((req, res, next) => {
   }
 });
 
-
 // 🚀 Lancer le serveur
 const port = process.env.BACKEND_PORT || 5000;
 app.listen(port, () =>
-  console.log("\x1b[32m%s\x1b[0m", `✅ Server running on http://localhost:${port}`)
+  console.log(
+    "\x1b[32m%s\x1b[0m",
+    `✅ Server running on http://localhost:${port}`
+  )
 );

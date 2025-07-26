@@ -41,8 +41,6 @@ export const createCourseController = async (req, res) => {
 
     const savedCourse = await saveCourse(newCourse);
 
-    // const savedCourse = await Course.create(newCourse);
-
     return res.status(201).json({
       ok: true,
       message: "Course created successfully",
