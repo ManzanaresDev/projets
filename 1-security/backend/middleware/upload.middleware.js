@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 // Création du storage
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, path.join(__dirname, `../../${process.env.UPLOADS_PATH}`));
+    cb(null, path.join(__dirname, `../${process.env.UPLOADS_PATH}`));
   },
   filename: (req, file, cb) => {
     const extension = path.extname(file.originalname); // garde l'extension .pdf
